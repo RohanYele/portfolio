@@ -20,6 +20,16 @@
       color: #fff;
       padding: 10px 20px;
       text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
 
     header h1 {
@@ -57,18 +67,25 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    h2 {
-      color: #333;
-      margin-bottom: 10px;
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px;
+      position: relative;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
+    .parallax-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
     }
 
     footer {
@@ -81,6 +98,7 @@
 </head>
 <body>
   <header>
+    <img src="profile.jpg" alt="Rohan Yele">
     <h1>Rohan Yele</h1>
     <p>Cybersecurity Professional | MSc Cybersecurity</p>
   </header>
@@ -89,18 +107,25 @@
     <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Work Experience</a>
-    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <div class="parallax" style="background-image: url('parallax1.jpg');">
+    <div class="parallax-text">Welcome to My Portfolio</div>
+  </div>
 
   <div class="container">
     <section id="about" class="section">
       <h2>About Me</h2>
       <p>
         Cybersecurity professional with over 5 years of experience across financial, telecom, and healthcare
-        sectors. Driven by a forward-thinking strategic mindset, problem-solving skills, and collaborative teamwork.
+        sectors. Driven by a forward-thinking strategic mindset and problem-solving skills.
       </p>
     </section>
+
+    <div class="parallax" style="background-image: url('parallax2.jpg');">
+      <div class="parallax-text">Skills and Expertise</div>
+    </div>
 
     <section id="skills" class="section">
       <h2>Technical Skills</h2>
@@ -112,41 +137,17 @@
       </ul>
     </section>
 
+    <div class="parallax" style="background-image: url('parallax3.jpg');">
+      <div class="parallax-text">Professional Experience</div>
+    </div>
+
     <section id="experience" class="section">
       <h2>Work Experience</h2>
       <h3>Senior Network Security Engineer | CDW (Client: Abbott-Contract) | Aug 2024 – Present</h3>
-      <ul>
-        <li>Implemented Checkpoint MDS Microsegmentation, ASA VPN, Palo Alto Firewalls.</li>
-        <li>Resolved security incidents and performed BAU change management activities.</li>
-      </ul>
+      <p>Implemented Checkpoint MDS Microsegmentation, ASA VPN, and Palo Alto Firewalls.</p>
 
       <h3>Associate | Cognizant Technology Solutions | Mar 2022 – Oct 2022</h3>
-      <ul>
-        <li>Managed ASA, Juniper, and Fortinet Firewalls, Sentinel, PAM, and NNMi tools.</li>
-        <li>Performed vulnerability management and security rule compliance audits.</li>
-      </ul>
-
-      <h3>Other Roles</h3>
-      <ul>
-        <li>Network Security Administrator | Wipro LTD | Feb 2021 – Feb 2022</li>
-        <li>Technical Specialist | Wysetek Technologies | Mar 2020 – Feb 2021</li>
-        <li>Junior IT Executive | Lilac Insights | Jul 2018 – Mar 2020</li>
-      </ul>
-    </section>
-
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>MSc Cyber Security</strong>, National College of Ireland, Dublin | Oct 2022 – Oct 2023</li>
-        <li><strong>B.E. Computer Engineering</strong>, Terna Engineering College, Mumbai | Aug 2014 – May 2018</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:y.rohanyele@gmail.com">y.rohanyele@gmail.com</a></p>
-      <p>Phone: +353 892 389 981 | +91 986 799 8959</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/rohan-yele-05887311a" target="_blank">linkedin.com/in/rohan-yele-05887311a</a></p>
+      <p>Managed ASA, Juniper, and Fortinet Firewalls, Sentinel, and PAM tools.</p>
     </section>
   </div>
 
