@@ -14,12 +14,13 @@
       color: #333;
     }
 
-    header {
+      header {
       background: #333;
       color: #fff;
-      padding: 10px 20px;
+      padding: 20px; /* Increased padding for more space */
       text-align: center;
       position: relative;
+      height: 200px; /* Adjusted height to fit the profile picture */
     }
 
     header img {
@@ -27,13 +28,16 @@
       height: 150px;
       border-radius: 50%;
       position: absolute;
-      top: 20px;
+      top: 25px; /* Adjusted top position */
       left: 20px;
+      object-fit: cover; /* Ensures the image scales properly */
     }
 
     header h1 {
       margin: 0;
+      padding-top: 50px; /* Adjusted padding for better alignment */
     }
+
 
     nav {
       background: #444;
@@ -100,13 +104,13 @@
   </style>
 </head>
 <body> 
-  <div>
+
     <header>
       <img src="images/1729440569105.jpeg" alt="Rohan Yele">
       <h1>Rohan Yele</h1>
       <p>Cybersecurity Professional | MSc Cybersecurity</p>
     </header>
-  </div>
+
   <nav>
     <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
