@@ -1,26 +1,159 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan Yele - Cybersecurity Professional</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
-                <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
-                <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
-                <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is the home page.</p>
-    </main>
-    <script src="js/main.js"></script>
+  <header>
+    <h1>Rohan Yele</h1>
+    <p>Cybersecurity Professional | MSc Cybersecurity</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Work Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Cybersecurity professional with over 5 years of experience across financial, telecom, and healthcare
+        sectors. Driven by a forward-thinking strategic mindset, problem-solving skills, and collaborative teamwork.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Cisco Certified Network Professional (CCNP Security-ASA)</li>
+        <li>Microsoft Certified Solution Expert (MCSE), MCSA</li>
+        <li>Cloud Platforms: Microsoft Azure, AWS, GCP</li>
+        <li>Trend Micron Tipping Point IPS</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Work Experience</h2>
+      <h3>Senior Network Security Engineer | CDW (Client: Abbott-Contract) | Aug 2024 – Present</h3>
+      <ul>
+        <li>Implemented Checkpoint MDS Microsegmentation, ASA VPN, Palo Alto Firewalls.</li>
+        <li>Resolved security incidents and performed BAU change management activities.</li>
+      </ul>
+
+      <h3>Associate | Cognizant Technology Solutions | Mar 2022 – Oct 2022</h3>
+      <ul>
+        <li>Managed ASA, Juniper, and Fortinet Firewalls, Sentinel, PAM, and NNMi tools.</li>
+        <li>Performed vulnerability management and security rule compliance audits.</li>
+      </ul>
+
+      <h3>Other Roles</h3>
+      <ul>
+        <li>Network Security Administrator | Wipro LTD | Feb 2021 – Feb 2022</li>
+        <li>Technical Specialist | Wysetek Technologies | Mar 2020 – Feb 2021</li>
+        <li>Junior IT Executive | Lilac Insights | Jul 2018 – Mar 2020</li>
+      </ul>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>MSc Cyber Security</strong>, National College of Ireland, Dublin | Oct 2022 – Oct 2023</li>
+        <li><strong>B.E. Computer Engineering</strong>, Terna Engineering College, Mumbai | Aug 2014 – May 2018</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:y.rohanyele@gmail.com">y.rohanyele@gmail.com</a></p>
+      <p>Phone: +353 892 389 981 | +91 986 799 8959</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/rohan-yele-05887311a" target="_blank">linkedin.com/in/rohan-yele-05887311a</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Rohan Yele. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
